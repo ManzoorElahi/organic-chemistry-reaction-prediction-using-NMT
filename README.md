@@ -18,10 +18,25 @@ and target sentences.
 
 Download the required data using the below code (For Python 3).
 
-```python
+```sh
 import urllib.request
 url = 'https://public.boxcloud.com/d/1/XZG91j-8-qifzIRdGyZ1OyhRNWS0cpD_MEGfgrpUjf-slwxt1hb-boJ3ZrG7CxguLlU3co4HMIlFs5FM59jHdz4x_2q80XXiPjRSTQtvcqWcHK2rPAiFyuEmIdFeg6fP2zNlttFQujmxwgeQe8C3xGBlsD73fAbEpKlMJk8fZPPbDnraqSjrz3QPiMACoR1Nwbrl9NdBhvptzzoqEzJ8dZ1vrIXRYnRVgn0Vzmh-DvhC6rAL_N95xjsJOvQx3qnA7rtxiUOum0WrnUeyOj22Pkj4PHH5TrBvHjCBcMAXSQSaPM8wyUABeypxJ5gZjqaN3IvZMVj32knzan8QpE3TDQxMmV7bC-YZp-j0zgoSZKewAjRURhIirkkGmI7tfmXS8evVu8AeRpjDyIlLVmChqdqi_UQt_J7kOjzZ5BKv9LlA5jDyhLUYkjoGnQXbr7ZgSrf1Nut_ygtrYeBkJJ9s0kTmgEDml2l2W74sf6OyuFm8BIxP8b022EgKA0bPsnBJqOigi4FN18t8YlAklpA06JMywd2Acpg0BNLAmRTGnkSC3rJrU7blVUMB6k7Gn-L6Z-c6EtLj6USo3KLU_Yf5KXRLwRE4JBhEEbB12SzJGmpZIFdZTpjOCz1nIZW_pNn7ybJ7yM1DaJkNoK4Fduh_-dM1qp6iGj-qNwQFpUfZJeI-qjYUG59H4TvBClfY-bv_Z3HHW-lj5FbAQFYVypOJsRsP18wowbq-OanmfTSLoDRV3p0wNQLXXdug_kgo0mmmDYyRg89iAilyZCvwSjRsJdIGemQSaUnaaEfahOY0gcld6YrxpEhyYECeeubEDnkWc_c3N4HeT9Co5rlrv2n709uHtNrBu4ObzzMZK3xmiqU_chySiqHIhTxfUmRTkq4v6Q-jtMKInCV69H5Hm06iJhHOH6uan1VWelRfhaPbZ11mJJzOlHDkqBRtTx8AGB2gjRcikImtfLxq3_eXmte-79KYfh3_JI8mWWwHQwY6WSVna93Necqm87a5Pmfhk2m-s7zzD50QDeKdT9yNJ7FhWiturzVtPRBKTgzDPsaSdKRFUe0YGB1RS-fvKGu5b0_0Y6t4ZS3eDBBSTVoHhbjsbvfb9oaGd-MwU3UbcEJqlguMd8gVPbgPlHHx_HtZ4uM_rr1_lDL9OqCJ0vKo4jN0bBHPrjum7vJ_0ChIoBsF_fOD7vTpp2NK5at6Z7mIBLf3Rjbg7weyXwadigp5bB3njdV6Cn2IMtNL2C2FtNbl1g6OiOTtQh4g7vqbulkq/download'
 csv = urllib.request.urlopen(url).read()
 with open('data/US_patents_1976-Sep2016_1product_reactions_train.csv', 'wb') as fx: 
     fx.write(csv)
 ```
+
+### Prediction Result
+
+| Reactants | Actual Product | Predicted Product |  T/F |
+| ------ | ------ | ------ | ------ |
+| N[C@@H](CS)C(=O)O.S=C=S | O=C(O)C1CSC(=S)N1 | O=C(O)C1CSC(=S)N1 | True | 
+| BrCCCCCCC1CC1.O=C=O | O=C(O)CCCCCCC1CC1 | O=C(O)CCCCCCC1CC1 | True |
+| CCCCCC(=O)CCCCC.NO | CCCCCC(CCCCC)=NO | CCCCCC(CCCCC)=NO | True |
+| N#C[S-].O=C(Cl)c1ccco1 | O=C(N=C=S)c1ccco1 | O=C(N=C=S)c1ccco1 | True |
+| Cc1nccn1CCCl.[N-]=[N+]=[N-] | Cc1nccn1CCN=[N+]=[N-] | Cc1nccn1CCN=[N+]=[N-] | True |
+| CCCCCC/C=C/C(=O)Cl | CCCCCC/C=C/C=O | CCCCCC/C=C/C=O | True |
+| CCCCCC/C=C/C=O | CCCCCC/C=C/CO | CCCCCC/C=C/CO | True |
+| COC(=O)C(N=[N+]=[N-])OC | COC(N=[N+]=[N-])C(=O)O | COC(N=[N+]=[N-])C(=O)O | True |
+| COC(=O)CO.COCCl | COCOCC(=O)OC | COCOCC(=O)OC | True |
+| CNO.Nc1cccnc1.O=N[O-] | C[N+]([O-])=NNc1cccnc1 | C[N+]([O-])=NNc1cccnc1 | True |
