@@ -8,7 +8,7 @@ The data used is available at https://ibm.ent.box.com/v/ReactionSeq2SeqDataset
 The key idea of the attention mechanism is to establish direct short-cut connections between the target and the source by paying "attention" to relevant source content as we translate. A nice byproduct of the attention mechanism is an easy-to-visualize alignment matrix between the source and target sentences.
 
 <p align="center">
-<img width="40%" src="images/f.png" />
+<img width="40%" src="images/attention.png" />
 <br>
 Figure 1. <b>Attention visualization</b> – example of the alignments between source
 and target sentences.
