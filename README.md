@@ -1,9 +1,9 @@
-# Organic Chemistry Reaction Prediction using NMT with Attention
+## Organic Chemistry Reaction Prediction using NMT with Attention
 
 The intend is to solve the forward-reaction prediction problem, where the reactants are known and the interest is in generating the reaction products. The idea of relating organic chemistry to a language and explore the application of state-of-the-art neural machine translation methods, which are sequence-to-sequence (seq2seq) models was explained in Schwaller, P., Gaudin, T., Lanyi, D., Bekas, C. and Laino, T., 2017. " Found in Translation": Predicting Outcome of Complex Organic Chemistry Reactions using Neural Sequence-to-Sequence Models. arXiv preprint arXiv:1711.04810.
 (https://arxiv.org/abs/1711.04810)
 The data used is available at https://ibm.ent.box.com/v/ReactionSeq2SeqDataset
-# Attention Mechanism
+### Attention Mechanism
 
 The key idea of the attention mechanism is to establish direct short-cut connections between the target and the source by paying "attention" to relevant source content as we translate. A nice byproduct of the attention mechanism is an easy-to-visualize alignment matrix between the source and target sentences.
 
