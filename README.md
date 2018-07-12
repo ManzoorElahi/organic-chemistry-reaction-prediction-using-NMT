@@ -58,6 +58,6 @@ Executable files for Windows (64 bit) & Linux (64 bit) are available from Source
 - Linux (https://sourceforge.net/projects/crp-chemicalreactionprediction/files/Linux64/CRP_GUI.tar.gz/download)
 - Windows (https://sourceforge.net/projects/crp-chemicalreactionprediction/files/Windows64/CRP_GUI.exe/download)
 
-# Source Code for GUI
+### Source Code for GUI
 
 Source code is available in the GUI/Scripts folder.
