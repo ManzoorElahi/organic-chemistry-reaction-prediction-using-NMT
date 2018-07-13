@@ -55,8 +55,8 @@ Figure 2. Graphical User Interface for Reaction Prediction
 
 Executable files for Windows (64 bit) & Linux (64 bit) are available from Sourceforge.
 
-- Linux (https://sourceforge.net/projects/crp-chemicalreactionprediction/files/Linux64/CRP_GUI.tar.gz/download)
-- Windows (https://sourceforge.net/projects/crp-chemicalreactionprediction/files/Windows64/CRP_GUI.exe/download)
+- Linux (https://sourceforge.net/projects/crp-chemicalreactionprediction/files/CRP_GUI.tar.gz/download)
+- Windows (https://sourceforge.net/projects/crp-chemicalreactionprediction/files/CRP_GUI.exe/download)
 
 ### Source Code for GUI
 
