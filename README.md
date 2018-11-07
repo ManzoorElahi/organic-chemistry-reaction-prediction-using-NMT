@@ -60,7 +60,7 @@ Figure 2. <b> Asynchronous Bidirectional Decoding</b> – Asynchronous Bidirecti
 A simple Graphical User Interface designed using pyqt which takes simplified molecular-input line-entry system (SMILES) as an input and generates the product SMILE & molecule.
 
 <p align="center">
-<img width="40%" src="GUI/Images/gui.png" />
+<img width="40%" src="V2/images/1.PNG" />
 <br>
 Figure 3. Graphical User Interface for Reaction Prediction
 </p>
@@ -71,6 +71,8 @@ Executable files for Windows (64 bit) & Linux (64 bit) are available from Source
 
 - Linux (https://sourceforge.net/projects/crp-chemicalreactionprediction/files/CRP_GUI.tar.gz/download)
 - Windows (https://sourceforge.net/projects/crp-chemicalreactionprediction/files/CRP_GUI.exe/download)
+
+- Windows Version 2(https://sourceforge.net/projects/crp-chemicalreactionprediction/files/CRP_V2.exe/download)
 
 ### Source Code for GUI
 
