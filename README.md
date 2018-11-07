@@ -35,7 +35,7 @@ with open('data/US_patents_1976-Sep2016_1product_reactions_train.csv', 'wb') as 
 ### Model
 
 <p align="center">
-<img width="40%" src="V2/images/OCR.png" />
+<img width="90%" src="V2/images/OCR.png" />
 <br>
 Figure 1. <b> Asynchronous Bidirectional Decoding</b> – Asynchronous Bidirectional Decoding for Neural Machine Translation with Attention.
 </p>
