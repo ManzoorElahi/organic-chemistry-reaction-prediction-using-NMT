@@ -3,6 +3,11 @@
 The intend is to solve the forward-reaction prediction problem, where the reactants are known and the interest is in generating the reaction products. The idea of relating organic chemistry to a language and explore the application of state-of-the-art neural machine translation methods, which are sequence-to-sequence (seq2seq) models was explained in Schwaller, P., Gaudin, T., Lanyi, D., Bekas, C. and Laino, T., 2017. " Found in Translation": Predicting Outcome of Complex Organic Chemistry Reactions using Neural Sequence-to-Sequence Models. arXiv preprint arXiv:1711.04810.
 (https://arxiv.org/abs/1711.04810)
 The data used is available at https://ibm.ent.box.com/v/ReactionSeq2SeqDataset
+
+The model in version 2 is slightly based on the model discussed in "Asynchronous Bidirectional Decoding for Neural Machine Translation" (https://arxiv.org/abs/1801.05122). 
+
+Beam search is used for predicting reactions in SMILES format.
+
 ### Attention Mechanism
 
 The key idea of the attention mechanism is to establish direct short-cut connections between the target and the source by paying "attention" to relevant source content as we translate. A nice byproduct of the attention mechanism is an easy-to-visualize alignment matrix between the source and target sentences.
@@ -25,6 +30,15 @@ csv = urllib.request.urlopen(url).read()
 with open('data/US_patents_1976-Sep2016_1product_reactions_train.csv', 'wb') as fx:
     fx.write(csv)
 ```
+
+
+### Model
+
+<p align="center">
+<img width="40%" src="V2/images/OCR.png" />
+<br>
+Figure 1. <b> Asynchronous Bidirectional Decoding</b> – Asynchronous Bidirectional Decoding for Neural Machine Translation with Attention.
+</p>
 
 ### Prediction Result
 
