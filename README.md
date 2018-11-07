@@ -37,7 +37,7 @@ with open('data/US_patents_1976-Sep2016_1product_reactions_train.csv', 'wb') as 
 <p align="center">
 <img width="90%" src="V2/images/OCR.png" />
 <br>
-Figure 1. <b> Asynchronous Bidirectional Decoding</b> – Asynchronous Bidirectional Decoding for Neural Machine Translation with Attention.
+Figure 2. <b> Asynchronous Bidirectional Decoding</b> – Asynchronous Bidirectional Decoding for Neural Machine Translation with Attention.
 </p>
 
 ### Prediction Result
@@ -62,7 +62,7 @@ A simple Graphical User Interface designed using pyqt which takes simplified mol
 <p align="center">
 <img width="40%" src="GUI/Images/gui.png" />
 <br>
-Figure 2. Graphical User Interface for Reaction Prediction
+Figure 3. Graphical User Interface for Reaction Prediction
 </p>
 
 ### Binaries
